@@ -1,0 +1,31 @@
+<h1 class="m-4 text-danger">Create Commande</h1>
+<div class="card">
+  <div class="card-footer">Create Commande {{commande|json}}</div>
+
+  <div class="card-body">
+
+    <div class="form-group">
+      <label for="ref">Reference</label>
+      <input id="ref" type="text" [(ngModel)]="commande.reference " class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="total">Total</label>
+      <input id="total" type="number" [(ngModel)]="commande.total" class="form-control">
+    </div>
+
+<div class="form-group">
+      <label for="totalPayee">Total Payee</label>
+      <input id="totalPayee" type="number" [(ngModel)]="commande.totalPayee" class="form-control">
+    </div>
+
+
+  </div>
+
+
+  <div class="card-footer">
+    <button class="btn btn-danger btn-lg" (click)="save()"> Save</button>
+  </div>
+
+
+</div>

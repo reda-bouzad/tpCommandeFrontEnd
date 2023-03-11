@@ -1,0 +1,19 @@
+<h1 class="m-4 text-danger">Liste des commandes</h1>
+<table class="table table-striped ">
+  <thead>
+  <th>Id : </th>
+  <th>Reference : </th>
+  <th>total : </th>
+  <th>Total Payée : </th>
+  <th>Action : </th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of commandes">
+    <td>{{c.id}}</td>
+    <td>{{c.reference}}</td>
+    <td>{{c.total}}</td>
+    <td>{{c.totalPayee}}</td>
+    <td><button (click)="delete(c)" class="btn btn-sm btn-danger">Delete</button></td>
+  </tr>
+  </tbody>
+</table>
